@@ -8,11 +8,18 @@ const ContactForm = ({ onSubmit }) => {
 
   const handleChange = evt => {
     const { name, value } = evt.target;
-    if (name === 'name') {
-      setName(value);
-    }
-    if (name === 'number') {
-      setNumber(value);
+
+    switch (name) {
+      case 'name':
+        setName(value);
+        break;
+      
+      case 'number':
+        setNumber(value);
+        break;
+      
+      default:
+        return;
     }
   };
 
