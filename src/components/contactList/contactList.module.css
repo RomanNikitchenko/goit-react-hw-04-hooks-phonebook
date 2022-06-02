@@ -1,0 +1,11 @@
+.item {
+    border: 1px solid;
+    padding: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 10px;
+}
